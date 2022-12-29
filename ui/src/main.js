@@ -9,4 +9,4 @@ app.use(PrimeVue);
 
 createApp(App).use(PrimeVue).mount('#app')
 
-app.mount("#app");
+// app.mount("#app");

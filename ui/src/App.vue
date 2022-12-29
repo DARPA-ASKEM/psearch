@@ -1,14 +1,14 @@
 <template>
-  <OpenaiQuery></OpenaiQuery>
+  <GraphVisualizer></GraphVisualizer>
 </template>
 
 <script>
 
-import OpenaiQuery from './components/openai_query.vue'
+import GraphVisualizer from './components/neo_vis.vue'
 export default {
   name: 'App',
   components: {
-    OpenaiQuery
+    GraphVisualizer
   }
 }
 </script>
