@@ -6,7 +6,7 @@
         <h3>Latest query: <span class="query" >{{this.latestQuery}}</span></h3>
         <br/>
         
-        <Button label="Send" @click="sendToOpenAi($event)"></Button>
+        <Button label="Send" @click="sendToOpenAi()"></Button>
 
         <div class="main-container">
             <div class="graph-renderer" id="viz"></div>
@@ -51,7 +51,7 @@
                 neovisInstance = new NeoVis(config);
                 neovisInstance.render();
             },
-            sendToOpenAi(event){
+            sendToOpenAi(){
 
                 if (this.value.toLowerCase().includes("delete")){
                         alert("Unable to delete nodes or edges")
