@@ -52,8 +52,7 @@
                 neovisInstance.render();
             },
             sendToOpenAi(event){
-                console.log(event)
-                console.log(this.value)
+
                 if (this.value.toLowerCase().includes("delete")){
                         alert("Unable to delete nodes or edges")
                         return
@@ -63,13 +62,8 @@
                     return
                 }
                 axios.get("http://localhost:8001/experimental/cql?query="+this.value).then((resp) => {
-                    console.log(resp)
-                    console.log(resp.text)
-                    console.log(resp.data)
                     let config;
                     config = graphConfig()
-                    console.log('hh')
-                    console.log(config)
                     if (resp.data.toLowerCase().includes("delete")){
                         alert("Unable to delete nodes or edges")
                         return
@@ -79,7 +73,6 @@
                         return
                     }
                     config.initialCypher=resp.data
-                    console.log(config.initialCypher)
                     this.renderGraph(config)
                 
                     })
@@ -88,7 +81,6 @@
             
         },
         mounted() {
-            console.log(this.config)
             this.renderGraph(this.config);
         }
     }
