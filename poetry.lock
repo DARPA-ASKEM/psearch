@@ -42,20 +42,6 @@ optional = false
 python-versions = ">=3.5"
 
 [[package]]
-name = "neo4j"
-version = "5.3.0"
-description = "Neo4j Bolt driver for Python"
-category = "main"
-optional = false
-python-versions = ">=3.7"
-
-[package.dependencies]
-pytz = "*"
-
-[package.extras]
-pandas = ["pandas (>=1.0.0)"]
-
-[[package]]
 name = "numpy"
 version = "1.24.0"
 description = "Fundamental package for array computing in Python"
@@ -209,7 +195,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "cc558784f4edad664a78cdf7b96cd4645937b58f5dfaa80eac5d07cfd8c592a3"
+content-hash = "0bc679c7ec28e03135c7d6c094f46550eea67cdbdaab90790ceffc88bf9c23f9"
 
 [metadata.files]
 certifi = [
@@ -231,9 +217,6 @@ et-xmlfile = [
 idna = [
     {file = "idna-3.4-py3-none-any.whl", hash = "sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"},
     {file = "idna-3.4.tar.gz", hash = "sha256:814f528e8dead7d329833b91c5faa87d60bf71824cd12a7530b5526063d02cb4"},
-]
-neo4j = [
-    {file = "neo4j-5.3.0.tar.gz", hash = "sha256:0c1c7d8812eed60da0a442d1e0f35edbda248255703e506a081cb70e083b3b5c"},
 ]
 numpy = [
     {file = "numpy-1.24.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:6e73a1f4f5b74a42abb55bc2b3d869f1b38cbc8776da5f8b66bf110284f7a437"},
