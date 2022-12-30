@@ -1,6 +1,6 @@
 <template>
     <div>   
-        <h1>Ask openai to generate a cypher query for you</h1>
+        <h1>Ask openai to search our graph database for you</h1>
 
         <Textarea  v-model="value" rows="5" cols="30" ></Textarea>
         <h3>Latest query: <span class="query" >{{this.latestQuery}}</span></h3>
@@ -33,6 +33,7 @@
         data() {
         return {
             latestQuery: "hi",
+            value:null
             };
         },
         
