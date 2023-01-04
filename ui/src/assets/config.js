@@ -66,7 +66,7 @@ function graphConfig () {
           color:"#02a353",
           shape:"square"
           },
-      Simulation_run: {
+      SimulationRun: {
         title: "id",
         label:"name",
         caption:"id",
@@ -83,7 +83,7 @@ function graphConfig () {
         group: "name",
         color:"#00c2fe",
         },
-      Model_revision:{
+      ModelRevision:{
         title: "id",
         label:"name",
         caption:"id",
