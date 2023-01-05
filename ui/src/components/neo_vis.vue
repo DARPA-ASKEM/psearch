@@ -53,9 +53,13 @@
                     <li>Intermediate</li>
                     <li>Model</li>
                     <li>ModelRevision</li>
+                    <li>ModelParameter</li>
                     <li>Plan</li>
+                    <li>PlanParameter</li>
                     <li>SimulationRun</li>
                     <li>Dataset</li>
+                    <li>Concept</li>
+                    <li>Project</li>
                 </ul>
             </div>
             <div class="column">
@@ -75,7 +79,11 @@
                     <li>REINTERPRETS</li>
                     <li>GENERATED_BY</li>
                     <li>BEGINS_AT</li>
+                    <li>PARAMETER_OF</li>
+                    <li>IS_CONCEPT_OF</li>
+                    <li>CONTAINS</li>
                 </ul>
+
             </div>
             <div class="column">
 
@@ -122,6 +130,8 @@
                     <li>REINTERPRETS</li>
                         <ul>
                             <li>Dataset -> SimulationRun</li>
+                            <li>ModelRevision -> Intermediate</li>
+                            <li>Intermediate -> Intermediate</li>
                         </ul>
                     <li>GENERATED_BY</li>
                         <ul>

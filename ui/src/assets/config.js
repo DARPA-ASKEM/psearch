@@ -91,6 +91,42 @@ function graphConfig () {
         group: "name",
         color:"#f3ec4b",
         shape:"square"
+      },
+      Concept:{
+        title: "id",
+        label:"name",
+        caption:"id",
+        value:"id",
+        group: "name",
+        color:"#f3ec4b",
+        shape:"square"
+      },
+      Project:{
+        title: "id",
+        label:"name",
+        caption:"id",
+        value:"id",
+        group: "name",
+        color:"#f3ec4b",
+        shape:"square"
+      },
+      PlanParameter:{
+        title: "id",
+        label:"name",
+        caption:"id",
+        value:"id",
+        group: "name",
+        color:"#f3ec4b",
+        shape:"square"
+      },
+      ModelParameter:{
+        title: "id",
+        label:"name",
+        caption:"id",
+        value:"id",
+        group: "name",
+        color:"#f3ec4b",
+        shape:"square"
       }
   },
   relationships: {
