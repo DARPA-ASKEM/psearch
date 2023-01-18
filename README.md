@@ -35,3 +35,12 @@ poetry run psearch "Your directive or question here"
 ```
 
 and an openCypher query will (hopefully) be returned.
+
+
+## run the ui
+To run the ui that connects to TDS run these commands from the command line
+```
+cd ui
+npm install
+npm run serve
+```
