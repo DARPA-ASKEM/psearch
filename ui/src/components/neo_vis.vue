@@ -55,8 +55,8 @@
                     <li>ModelRevision</li>
                     <li>ModelParameter</li>
                     <li>Plan</li>
-                    <li>PlanParameter</li>
                     <li>SimulationRun</li>
+                    <li>PlanParameter</li>
                     <li>Dataset</li>
                     <li>Concept</li>
                     <li>Project</li>
@@ -141,6 +141,21 @@
                         <ul>
                             <li>Model -> ModelRevision</li>
                         </ul>
+                    <li>IS_CONCEPT_OF</li>
+                        <ul>
+                            <li>Concept -> *</li>
+                        </ul>
+                    <li>CONTAINS</li>
+                        <ul>
+                            <li>Project -> *</li>
+                        </ul>
+                    <li>PARAMETER_OF</li>
+                        <ul>
+                            <li>PlanParameter -> SimulationRun</li>
+                            <li>ModelParameter -> ModelRevision</li>
+
+                        </ul>
+                    
                 </ul>
             </div>
 

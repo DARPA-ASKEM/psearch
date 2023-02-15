@@ -166,6 +166,15 @@ function graphConfig () {
       STRATIFIED_FROM:{
         "label":"name"
       },
+      PARAMETER_OF:{
+        "label":"name"
+      },
+      IS_CONCEPT_OF:{
+        "label":"name"
+      },
+      CONTAINS:{
+        "label":"name"
+      }
   },
     initialCypher: "MATCH (n)-[r]-() RETURN * LIMIT 300"}}
  
